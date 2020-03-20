@@ -21,7 +21,7 @@ task "build": {
   steps: [
     {
       name: "build-and-push"
-      image: "chhsiao/kaniko-executor"
+      image: "gcr.io/kaniko-project/executor"
       args: [
         "--destination=$(outputs.resources.docker-image.url)",
         "--context=/workspace/src-git",
