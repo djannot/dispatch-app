@@ -55,7 +55,6 @@ actions: [
     tasks: ["build", "deploy"]
     on push: {
       branches: ["master"]
-      paths: ["**"]
     }
   }
 ]
