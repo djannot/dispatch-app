@@ -11,7 +11,7 @@ resource "docker-image": {
 
 resource "gitops-git": {
   type: "git"
-  param url: "http://adfbb0d4438d1423488988b33061d277-1009507613.us-west-2.elb.amazonaws.com/user1/user1-nginx-gitops"
+  param url: "https://github.com/djannot/dispatch-gitops"
 }
 
 
