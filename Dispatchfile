@@ -41,8 +41,6 @@ task "deploy": {
       workingDir: "/workspace/gitops-git"
       args: [
         "-git-revision=$(context.git.commit)",
-        "-branch=$(context.git.commit)",
-        "-filepath=application.yaml.tmpl",
         "-create-pull-request=true",
         "-substitute=imageName=$(inputs.resources.docker-image.url)@$(inputs.resources.docker-image.digest)"
       ]
